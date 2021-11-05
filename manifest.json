@@ -1,0 +1,21 @@
+{
+    "name": "bookmark-manager",
+    "version": "0.1",
+    "permissions": [
+        "bookmarks"
+    ],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "dist/util/BookmarkManager.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "manifest_version": 3
+}
