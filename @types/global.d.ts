@@ -1,25 +1,26 @@
 export interface BookmarkTreeNode {
     dataAdded?: number;
     dateGroupModified?: number;
-    id : string;
-    index? : number;
-    parentId? : string;
-    title : string;
+    id: string;
+    index?: number;
+    parentId?: string;
+    title: string;
     unmodefied?: 'managed'
-    url : string;
+    url: string;
 }
 
 export interface CreateDetails {
-    index? : number
-    parentId? : string
-    title? : string
+    index?: number
+    parentId?: string
+    title?: string
     url?: string
 }
 
 declare global {
     var chrome: {
-        bookmarks : {
-            create: (bookamrk : CreateDetails) => Promise<BookmarkTreeNode>,
-        }   
+        bookmarks: {
+            create: (bookamrk: CreateDetails) => Promise<BookmarkTreeNode>,
+            getTree: () => Promise<BookmarkTreeNode>
+        }
     }
 }

@@ -1,0 +1,4 @@
+export var downloadPath = {
+    url: 'https://jiwoochoi-toolkit.github.io/bookmark-manager',
+    path: 'remote-bookmark/index.html',
+};
