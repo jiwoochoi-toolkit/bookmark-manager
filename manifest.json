@@ -10,7 +10,7 @@
     "web_accessible_resources": [
         {
             "resources": [
-                "dist/util/BookmarkManager.js"
+                "dist/util/*.js"
             ],
             "matches": [
                 "<all_urls>"
